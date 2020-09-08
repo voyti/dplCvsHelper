@@ -1,0 +1,29 @@
+.app-container {
+  padding: 24px;
+  min-height: 100vh;
+}
+
+.grids-container {
+  display: flex;
+  width: 100vw;
+  flex-wrap: wrap;
+}
+
+.button {
+  margin: 12px;
+  display: inline-block;
+  padding: 6px;
+  cursor: pointer;
+  color: #fafafa;
+  background-color: darken(aquamarine, 50%);
+
+  &.disabled {
+    cursor: default;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.margin-above {
+  margin-top: 12px;;
+}

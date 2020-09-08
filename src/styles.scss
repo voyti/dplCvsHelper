@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/ag-grid-community/src/styles/ag-grid.scss";
+@import "../node_modules/ag-grid-community/src/styles/ag-theme-balham/sass/ag-theme-balham-mixin.scss";
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: lighten(aquamarine, 20%);
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-bar {
+  background-color: darken(aquamarine, 55%);
+  color: #fafafa;
+  font-size: 24px;
+  padding: 24px;
+}
+
+.ag-theme-balham {
+  @include ag-theme-balham();
+}
